@@ -1,0 +1,119 @@
+---
+title: "Git R Done"
+subtitle: "Version control with Git, GitHub and RStudio"
+author: "N. Paterno"
+institute: "PLU"
+output:
+  xaringan::moon_reader:
+    css: plu.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+# Git R Done:
+
+### Downloading Git
+
+```{r, echo = FALSE, out.width="80%", fig.align='center'}
+knitr::include_graphics("images/00_git_install.PNG")
+```
+
+---
+
+# Git R Done: 
+
+### GitHub::home
+
+```{r, echo = FALSE, out.width="80%", fig.align='center'}
+knitr::include_graphics("images/01_github_home.PNG")
+```
+
+---
+
+# Git R Done: 
+
+### GitHub::signup
+
+```{r, echo = FALSE, out.width="80%", fig.align='center'}
+knitr::include_graphics("images/02_github_signup.PNG")
+```
+
+---
+
+# Git R Done: 
+
+### Getting ready to sync
+
+To sync RStudio and GitHub we'll need to install the `devtools` and `usethis` packages. Run the code below in your console pane in RStudio. 
+
+```{r, eval = FALSE}
+install.packages(c("devtools", "usethis"))
+```
+
+---
+
+# Git R Done: 
+
+### Telling your machine your GitHub identity
+
+This code will be run in either Terminal (Mac/Linux) or the Command Line (Windows)
+
+```{r, eval = FALSE}
+git config --global user.name "your_github_username"
+
+git config --global user.email "email_for_github_login"
+
+git config --list
+```
+
+The last of these will confirm the other commands ran correctly.
+
+---
+
+# Git R Done
+
+### Giving RStudio access to your GitHub
+
+Now we need to create a Personal Access Token (PAT) for RStudio to have access to your GitHub account. In your console pane:
+
+```{r, eval = FALSE}
+usethis::create_github_token()
+```
+
+--
+
+```{r, echo = FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/03_github_PAT.PNG")
+```
+
+Copy the token!
+
+---
+
+# Git R Done
+
+### Giving RStudio access to your GitHub
+
+Back to the RStudio console:
+
+```{r, eval = FALSE}
+gitcreds::gitcreds_set()
+```
+
+Paste then token when prompted.
+
+--
+
+To confirm this worked:
+
+```{reval = FALSE}
+gh::gh_whoami()
+```
+
