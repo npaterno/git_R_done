@@ -17,7 +17,9 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-# Git R Done:
+class: main
+
+# Git R Done
 
 ### Downloading Git
 
@@ -27,7 +29,9 @@ knitr::include_graphics("images/00_git_install.PNG")
 
 ---
 
-# Git R Done: 
+class: main
+
+# Git R Done 
 
 ### GitHub::home
 
@@ -37,7 +41,9 @@ knitr::include_graphics("images/01_github_home.PNG")
 
 ---
 
-# Git R Done: 
+class: main
+
+# Git R Done 
 
 ### GitHub::signup
 
@@ -47,7 +53,9 @@ knitr::include_graphics("images/02_github_signup.PNG")
 
 ---
 
-# Git R Done: 
+class: main
+
+# Git R Done 
 
 ### Getting ready to sync
 
@@ -59,7 +67,9 @@ install.packages(c("devtools", "usethis"))
 
 ---
 
-# Git R Done: 
+class: main
+
+# Git R Done 
 
 ### Telling your machine your GitHub identity
 
@@ -76,6 +86,8 @@ git config --list
 The last of these will confirm the other commands ran correctly.
 
 ---
+
+class: main
 
 # Git R Done
 
@@ -97,6 +109,8 @@ Copy the token!
 
 ---
 
+class: main
+
 # Git R Done
 
 ### Giving RStudio access to your GitHub
@@ -117,3 +131,83 @@ To confirm this worked:
 gh::gh_whoami()
 ```
 
+---
+
+class: main
+
+# Git R Done
+
+### Create a new repository
+
+<div class="clearfix">
+  <div class="img-container">
+    <img src="images/04_github_new-repo.PNG" style="width:100%">
+  </div>
+</div>
+
+---
+
+class: main
+
+# Git R Done
+
+### Create a new repository
+
+<div class="clearfix">
+  <div class="img-container">
+    <img src="images/04_github_new-repo.PNG" style="width:100%">
+  </div>
+  <div class="img-container">
+    <img src="images/05_github_create-new-repo.PNG" style="width:175%">
+  </div>
+</div>
+---
+
+class: main
+
+# Git R Done
+
+### Creating an RStudio project
+
+<div class="clearfix">
+  <div class="img-container">
+    <img src="images/06_rstudio_new-project.PNG" style="width:100%">
+  </div>
+</div>
+
+---
+
+class: main
+
+# Git R Done
+
+### Creating an RStudio project
+
+<div class="clearfix">
+  <div class="img-container">
+    <img src="images/06_rstudio_new-project.PNG" style="width:100%">
+  </div>
+  <div class="img-container">
+    <img src="images/07_rstudio_version-control.PNG"  style="width:100%">
+  </div>
+</div>
+
+---
+
+class: main
+
+# Git R Done
+
+### Creating an RStudio project
+
+<div class="clearfix">
+  <div class="img-container">
+    <img src="images/06_rstudio_new-project.PNG" style="width:100%">
+  </div>
+  <div class="img-container">
+    <img src="images/07_rstudio_version-control.PNG"  style="width:100%">
+  </div>
+  <div class="img-container">
+    <img src="images/08_rstudio_git-clone.PNG"  style="width:100%">
+  </div>
+</div>
