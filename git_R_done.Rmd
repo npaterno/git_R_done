@@ -211,3 +211,61 @@ class: main
     <img src="images/08_rstudio_git-clone.PNG"  style="width:100%">
   </div>
 </div>
+
+---
+
+class: main
+
+# Git R Done
+
+```{r, echo = FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/git_out.jpg")
+```
+
+--- 
+
+class: main
+
+# Git R Done
+
+### Git commit
+
+```{r, echo = FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/09_git-commit.PNG")
+```
+
+---
+
+class: main
+
+# Git R Done
+
+### Git commit
+
+```{r, echo = FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/10_git-commit-message.PNG")
+```
+
+---
+
+class: main
+
+# Git R Done
+
+### Git commit
+
+```{r, echo = FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/11_git-commit-changes.PNG")
+```
+
+---
+
+class: main
+
+# Git R Done
+
+### Git push
+
+```{r, echo = FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/12_git-push.PNG")
+```
