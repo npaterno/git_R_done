@@ -222,7 +222,7 @@ class: main
 knitr::include_graphics("images/git_out.jpg")
 ```
 
---- 
+---
 
 class: main
 
